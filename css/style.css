@@ -385,11 +385,58 @@ body._lock {
 		bottom: 52px;
 	}
 }
-@media(max-width: 480px) {
 
+/* ------------------- */
+
+.we-understand {
+	background-color: #171616;
+	padding: 116px 0;
+}
+.we-understand__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 58px;
+}
+.we-understand__info {
+	max-width: 506px;
+}
+.we-understand__title {
+	font-weight: 700;
+	font-size: calc(24px + 6 *(100vw / 1221));
+	line-height: 150%;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 42px;
+}
+.we-understand__text {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.23em;
+	color: #B7B7B7;
+	margin-bottom: 48px;
+}
+.we-understand__link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	letter-spacing: 0.15em;
+	text-decoration-line: underline;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.we-understand__image {
+	max-width: 513px;
+	width: 100%;
 }
 
 /* ------------------- */
 
+
+
+/* ------------------- */
 .footer {
 }

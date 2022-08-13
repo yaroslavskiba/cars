@@ -277,7 +277,117 @@ body._lock {
 }
 /* ------------------- */
 
+.we-can {
+	padding-bottom: 98px;
+}
+.we-can__container {
+}
+.we-can__title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 150%;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 15px;
+}
+.we-can__view-all {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 0.15em;
+	text-decoration-line: underline;
+	color: #000000;
+	margin-bottom: 60px;
+}
+.we-can__cards {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.we-can__picture {
+	position: relative;
+	width: 386px;
+	height: 500px;
+	overflow: hidden;
+}
+.we-can__image {
+	width: 100%;
+	object-fit: cover;
+	transition: transform 400ms, filter 400ms;
+}
+.we-can__text {
+	opacity: 0;
+	max-width: 269px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 150%;
+	letter-spacing: 0.23em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	transition: opacity 400ms, transform 400ms;
+}
+.we-can__plus {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.we-can__text {
+	position: absolute;
+	bottom: 32px;
+	left: 29px;
+}
+.we-can__plus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #DB2512;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	opacity: 0;
+	transition: opacity 400ms, transform 400ms;
+}
+.we-can__picture:is(:hover, :focus) > .we-can__image {
+	filter: brightness(0.3);
+}
+.we-can__picture:is(:hover, :focus) > .we-can__text {
+	opacity: 1;
+}
+.we-can__picture:is(:hover, :focus) > .we-can__plus {
+	opacity: 1;
+}
+.we-can__caption {
+	display: inline-block;
+	margin-top: 21px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 150%;
+	letter-spacing: 0.23em;
+	text-transform: uppercase;
+	color: #000000;
+}
+@media(max-width: 768px) {
+	.we-can__picture {
+		width: 286px;
+		height: 400px;
+	}
+	.we-can__text {
+		max-width: 169px;
+	}
+	.we-can__text {
+		font-size: 14px;
+	}
+	.we-can__text {
+		bottom: 52px;
+	}
+}
+@media(max-width: 480px) {
 
+}
 
 /* ------------------- */
 

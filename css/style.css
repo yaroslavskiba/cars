@@ -508,8 +508,130 @@ body._lock {
 
 /* ------------------- */
 
-
+.question {
+	background-color: #171616;
+	padding: 95px 0;
+}
+.question__contact-us {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 150%;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.question__contact {
+	display: flex;
+	gap: 38px;
+}
+.question__item {
+	position: relative;
+	width: 197px;
+	margin-bottom: 45px;
+}
+.question__item input {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px #fff solid;
+	display: block;
+	width: 100%;
+	padding: 15px 0;
+	font-size: 18px;
+	color: #fff;
+}
+.question__item input:focus,
+.question__item input:valid {
+	outline: 0;
+	border-bottom-color: #DB2512;
+}
+.question__item label {
+	position: absolute;
+	top: 14px;
+	left: 0;
+	pointer-events: none;
+}
+.question__item label span {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.15em;
+	min-width: 5px;
+	color: #fff;
+	transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.question__item input:focus+label span,
+.question__item input:valid+label span {
+  color: #DB2512;
+  transform: translateY(-30px);
+}
+.question__textarea {
+	margin-bottom: 37px;
+	background-color: inherit;
+	border-bottom: 1px solid #DB2512;
+	width: 440px;
+	height: 131px;
+	resize: none;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.15em;
+	color: #FFFFFF;
+}
+.question__button {
+	width: 198px;
+	height: 50px;
+	background: #DB2512;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	display: block;
+}
+@media(max-width:480px) {
+	.question__contact {
+		flex-direction: column;
+		gap: 0;
+	}
+	.question__textarea {
+		width: 95%;
+	}
+}
 
 /* ------------------- */
+
 .footer {
+}
+.footer__container {
+	min-height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__copy span {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.15em;
+	color: #000000;
+}
+.footer__social {
+	display: flex;
+	gap: 21px;
+}
+@media(max-width:320px) {
+	.footer__copy span {
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 150%;
+		letter-spacing: 0.15em;
+		color: #000000;
+	}
+	.footer__container {
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
+		justify-content: center;
+	}
 }
